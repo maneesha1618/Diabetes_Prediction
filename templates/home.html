@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body bgcolor="#ffffff">
+    <center>
+        <form method="POST" action="{{ url_for('home1') }}">
+            <h1>Diabetes Prediction</h1>
+            <div class="form-row">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="a" placeholder="Enter value">
+            </div>
+
+            <div class="form-row">
+                <label for="hypertension">Hypertension:</label>
+                <input type="text" id="hypertension" name="b" placeholder="Enter value">
+            </div>
+
+            <div class="form-row">
+                <label for="heart-disease">Heart Disease:</label>
+                <input type="text" id="heart-disease" name="c" placeholder="Enter value">
+            </div>
+
+            <div class="form-row">
+                <label for="smoking-history">Smoking History:</label>
+                <select id="smoking-history" name="d">
+                    <option value="No Info">No Info</option>
+                    <option value="never">Never</option>
+                    <option value="former">Former</option>
+                    <option value="current">Current</option>
+                    <option value="not current">Not current</option>
+                    <option value="ever">Ever</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="bmi">BMI:</label>
+                <input type="text" id="bmi" name="e" placeholder="Enter value">
+            </div>
+
+            <div class="form-row">
+                <label for="hba1c-level">HbA1C Level:</label>
+                <input type="text" id="hba1c-level" name="f" placeholder="Enter value">
+            </div>
+
+            <div class="form-row">
+                <label for="blood-glucose-level">Blood Glucose Level:</label>
+                <input type="text" id="blood-glucose-level" name="g" placeholder="Enter value">
+            </div>            
+            <input type="submit" value="Predict!" class="submit-button">
+        </form>
+    </center>
+</body>
+</html>
